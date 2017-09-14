@@ -4,8 +4,11 @@ app = express(),
 mongoose = require('mongoose'),
 bodyParser = require('body-parser'),
 passport = require('passport'),
-LocalStrategy = require('passport-local')
+LocalStrategy = require('passport-local'),
+keys = require('./config/keys')
 
+
+ mongoose.connect('mongodb://localhost/rawscience')
 
 
 
